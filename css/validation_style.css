@@ -1,0 +1,139 @@
+/* line 1, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15em;
+  flex-direction: column;
+}
+
+/* line 10, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.user-info input[type=text],
+.user-info input[type=password],
+.pass-form input[type=text],
+.pass-form input[type=password] {
+  width: 20em;
+  background-color: transparent;
+  border: none;
+  color: purple;
+  border-bottom: .1em solid #E8E8E8;
+  padding-left: .2em;
+}
+
+/* line 18, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.user-info input[type=text]:active,
+.user-info input[type=password]:active,
+.pass-form input[type=text]:active,
+.pass-form input[type=password]:active {
+  outline: none;
+}
+
+/* line 20, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.user-info input[type=text]:active + label,
+.user-info input[type=password]:active + label,
+.pass-form input[type=text]:active + label,
+.pass-form input[type=password]:active + label {
+  top: -1.5em;
+  font-size: .73em;
+}
+
+/* line 23, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.user-info input[type=text]:focus,
+.user-info input[type=password]:focus,
+.pass-form input[type=text]:focus,
+.pass-form input[type=password]:focus {
+  outline: none;
+}
+
+/* line 25, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.user-info input[type=text]:focus + label,
+.user-info input[type=password]:focus + label,
+.pass-form input[type=text]:focus + label,
+.pass-form input[type=password]:focus + label {
+  top: -1.5em;
+  font-size: .73em;
+}
+
+/* line 28, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.user-info input[type=text] + label,
+.user-info input[type=password] + label,
+.pass-form input[type=text] + label,
+.pass-form input[type=password] + label {
+  position: absolute;
+  top: -.188em;
+  left: .18em;
+  pointer-events: none;
+  transition: .3s ease-in-out;
+}
+
+/* line 36, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.f-name-info,
+.l-name-info,
+.username-info,
+.email-info,
+.pass-wrapper,
+.pass-confirm-wrapper {
+  display: flex;
+  margin: 2em 0 2em 0;
+  color: #D5D3DC;
+  position: relative;
+}
+
+/* line 47, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+select {
+  margin: 2em 0 2em 0;
+  width: 20em;
+  font-style: italic;
+  letter-spacing: .1em;
+  border: none;
+  color: purple;
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* line 58, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.service-agreement {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+/* line 61, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.service-agreement span {
+  color: purple;
+}
+
+/* line 63, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.service-agreement span:first-of-type {
+  margin-right: 3em;
+}
+
+/* line 66, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+button {
+  border-radius: .18em;
+  outline: none;
+  margin-top: .75em;
+  color: purple;
+  width: 6.2em;
+  height: 1.8em;
+  border: .1em solid purple;
+  cursor: pointer;
+  margin-left: 10.9em;
+}
+
+/* line 77, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+button:hover {
+  background-color: darkgrey;
+}
+
+/* line 82, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+#validation-form .active + label {
+  top: -1.5em;
+  font-size: .73em;
+}
+
+/* line 86, C:/Users/Admin/Documents/My Web Stuff/jquery training/validation-form/sass/validation_style.sass */
+.error_message {
+  color: red;
+}
+
+/*# sourceMappingURL=../css/validation_style.map */

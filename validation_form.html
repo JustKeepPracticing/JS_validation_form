@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/validation_style.css">
+        <link rel="icon" href="green_apple.png">
+        <title>Js Validation form</title>
+    </head>
+    <body>
+        <div class="form-wrapper">
+            <form class="user-info" id="validation-form">
+                <div class="f-name-info">
+                    <input class="first-name" type="text" name="firstName">
+                    <label>First Name</label>
+                </div>
+                <p class="error_msg_name error_message"></p>
+                <div class="l-name-info">
+                    <input class="last-name" type="text" name="lastName">
+                    <label>Last Name</label>
+                </div>
+                <p class="error_msg_Lname error_message"></p>
+                <div class="username-info">
+                    <input class="u_name" type="text" name="userName">
+                    <label>Username</label>
+                </div>
+                <p class="error_msg_username error_message"></p>
+                <div class="email-info">
+                    <input class="email" type="text" name="email">
+                    <label>Email</label>
+                </div>
+                <p class="error_msg_email error_message"></p>
+                <div class="select-pass-wrapper">
+                    <select>
+                        <option value="lang-selector">Select Language</option>
+                        <option value="english">English</option>
+                        <option value="armenian">Armenian</option>
+                        <option value="english">Russian</option>
+                        <option value="english">Chinese</option>
+                        <option value="english">Farsi</option>
+                        <option value="english">Spanish</option>
+                        <option value="english">Italian</option>
+                        <option value="english">Japanese</option>
+                        <option value="english">Vietnamese</option>
+                    </select>
+                </div>
+                <div class="pass-form">
+                    <div class="pass-wrapper">
+                        <input class="password" type="password" name="pass">
+                        <label>Password</label>
+                    </div>
+                    <p class="error_msg_pass error_message"></p>
+                    <div class="pass-confirm-wrapper">
+                        <input class="pass_confirm" type="password" name="passConfirm">
+                        <label>Password Confirmation</label>
+                    </div>
+                    <p class="error_msg_conf_pass error_message"></p>
+                </div>
+                <div class="service-agreement">
+                    <span>I agree to the terms of Service</span>
+                    <span><input type="checkbox"></span>
+                </div>
+            </form>
+            <button type="submit" id="submit"> Sign Up</button>
+        </div>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/validation.js"></script>
+    </body>
+</html>

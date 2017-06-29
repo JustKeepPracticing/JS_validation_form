@@ -1,0 +1,87 @@
+.form-wrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 15em
+  flex-direction: column
+
+.user-info,
+.pass-form
+  input[type=text],
+  input[type=password]
+    width: 20em
+    background-color: transparent
+    border: none
+    color: purple
+    border-bottom: .1em solid #E8E8E8
+    padding-left: .2em
+    &:active
+      outline: none
+      + label
+        top: -1.5em
+        font-size: .73em
+    &:focus
+      outline: none
+      + label
+        top: -1.5em
+        font-size: .73em
+    + label
+      position: absolute
+      top: -.188em
+      left: .18em
+      pointer-events: none
+      transition: .3s ease-in-out
+
+
+.f-name-info,
+.l-name-info,
+.username-info,
+.email-info,
+.pass-wrapper,
+.pass-confirm-wrapper
+  display: flex
+  margin: 2em 0 2em 0
+  color: #D5D3DC
+  position: relative
+
+select
+  margin: 2em 0 2em 0
+  width: 20em
+  font-style: italic
+  letter-spacing: .1em
+  //border: .15em solid darkgrey
+  border: none
+  color: purple
+  background-color: #ffffff
+  outline: none
+
+.service-agreement
+  display: flex
+  margin-bottom: 1em
+  span
+    color: purple
+    &:first-of-type
+      margin-right: 3em
+
+button
+  border-radius: .18em
+  outline: none
+  margin-top: .75em
+  color: purple
+  width: 6.2em
+  height: 1.8em
+  border: .1em solid purple
+  cursor: pointer
+  margin-left: 10.9em
+
+  &:hover
+    background-color: darkgrey
+
+#validation-form
+  .active
+    + label
+      top: -1.5em
+      font-size: .73em
+
+.error_message
+  color: red
